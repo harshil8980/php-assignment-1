@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <div class="logo"><img src="images/logo.png" alt="logo image"></div>
+        <h1>Pizza Store</h1>
+    </header>
+    <!-- form for user input -->
+   <form action="connection.php" method="post">
+    <h1>Add pizza details:</h1>
+   <label for="pizzaSize">Pizza Size:</label>
+        <select id="pizzaSize" name="pizzaSize">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+        </select>
+        <label id="toppings">Toppings:</label>
+        Greenpepper<input type="checkbox" name="TOPPING[]" value="Greenpepper" >
+        Onion<input type="checkbox" name="TOPPING[]" value="Onion">
+        Tomatos<input type="checkbox" name="TOPPING[]" value="Tomatos">
+        Black olives<input type="checkbox" name="TOPPING[]" value="Black olives">
+        Green olives<input type="checkbox" name="TOPPING[]" value="Green olives">
+        <label for="name">Mention sauce</label>
+        <input type="text" id="pizzaname" name="pizzaname" placeholder="Mention sauce" required>
+        <label for="dip">Dip</label>
+        <input type="text" id="dip" name="dip" placeholder="Mention dip" required>
+    <!-- add personal information -->
+        <h1>Add personal details:</h1>
+        <label for="dip">Name</label>
+        <input type="text" id="name" name="name" placeholder="Name" required>
+        <label for="dip">Phone number</label>
+        <input type="text" id="p_n" name="Phone_number" placeholder="Phone number" required>
+        <label for="dip">G-mail</label>
+        <input type="text" id="g_mail" name="g-mail" placeholder="G-mail" required>
+        <button type="submit" name="submit">Place Order</button>
+   </form>
+</body>
+</html>
